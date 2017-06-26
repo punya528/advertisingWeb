@@ -1,0 +1,28 @@
+.test{
+
+}
+
+body{
+  background-color: black;
+}
+
+#debug{
+  color:rgb(255, 255, 255);
+}
+
+#centerBtnImg{
+
+}
+
+#centerBtnImg :hover{
+
+}
+
+.setElement{
+  position:absolute;
+  pointer-events:none;
+}
+
+.Url{
+  pointer-events: visible;
+}

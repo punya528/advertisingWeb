@@ -3,12 +3,80 @@
 
 <head>
   <meta charset="utf-8">
-  <title>3D WEBSITE 04</title>
+  <title>ADVERTISING MEDIA GRAPHICS</title>
+  <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
-  <h1>3D WEBSITE 04 </h1>
-  <a class="btn btn-primary" href="index.html">back</a>
-</body>
+  <div>
+    <div class="setElement" style="top:195px;left:290px;">
+      <svg height="1000" width="1000">
+        <a onmousemove="setCenterBtn('_active')" onmouseout="setCenterBtn('')" class="Url" href="#">
+          <circle class="svgBtn" cx="115" cy="120" r="115" fill="blue" />
+        </a>
+      </svg>
+    </div>
 
+    <div class="setElement">
+      <svg height="1000" width="1000">
+        <a onmousemove="set3dWebBtn('_active')" onmouseout="set3dWebBtn('')" class="Url" href="3dweb.html">
+          <polygon class="svgBtn" points="0,75 0,200 335,535 395,470" style="fill:lime;stroke:purple;stroke-width:1" />
+        </a>
+        <a onmousemove="setPrintingBtn('_active')" onmouseout="setPrintingBtn('')" class="Url" href="#">
+          <polygon class="svgBtn" points="425,0 545,0 235,300 180,250" style="fill:lime;stroke:purple;stroke-width:1" />
+        </a>
+        <a onmousemove="setVtrBtn('_active')" onmouseout="setVtrBtn('')" class="Url" href="#">
+          <polygon class="svgBtn" points="450,90 400,150 785,535 785,420" style="fill:lime;stroke:purple;stroke-width:1" />
+        </a>
+        <a onmousemove="setEventBtn('_active')" onmouseout="setEventBtn('')" class="Url" href="#">
+          <polygon class="svgBtn" points="540,300 605,370 370,610 250,610" style="fill:lime;stroke:purple;stroke-width:1" />
+        </a>
+      </svg>
+    </div>
+    <div style="top:265px;left:290px" class="setElement">
+      <img id="centerBtn" src="images/centerBtn.png">
+    </div>
+    <div style="top:220px;left:100px" class="setElement">
+      <img id="3dWebBtn" src="images/3dWeb.png">
+    </div>
+    <div style="top:0px;left:225px" class="setElement">
+      <img id="printingBtn" src="images/printing.png">
+    </div>
+    <div style="top:140px;left:450px" class="setElement">
+      <img id="vtrBtn" src="images/vtr.png">
+    </div>
+    <div style="top:330px;left:320px" class="setElement">
+      <img id="EventBtn" src="images/Event.png">
+    </div>
+    <div style="top:0px;left:50px" class="setElement">
+      <a onmousemove="setBtn('ideaCreative','ideaCreative_active.png')" onmouseout="setBtn('ideaCreative','ideaCreative.png')" class="Url" href="#">
+        <img id="ideaCreative" src="images/ideaCreative.png">
+      </a>
+    </div>
+    <div style="top:100px;left:550px" class="setElement">
+      <a onmousemove="setBtn('publiceRelations','publiceRelations_active.png')" onmouseout="setBtn('publiceRelations','publiceRelations.png')" class="Url" href="#">
+        <img id="publiceRelations" src="images/publiceRelations.png">
+      </a>
+    </div>
+    <div style="top:490px;left:450px" class="setElement">
+      <a onmousemove="setBtn('advertising','advertising_active.png')" onmouseout="setBtn('advertising','advertising.png')" class="Url" href="#">
+        <img id="advertising" src="images/advertising.png">
+      </a>
+    </div>
+    <div style="top:430px;left:50px" class="setElement">
+      <a onmousemove="setBtn('multimediaBtn','multimedia_active.png')" onmouseout="setBtn('multimediaBtn','multimedia.png')" class="Url" href="#">
+        <img id="multimediaBtn"  src="images/multimedia.png">
+      </a>
+    </div>
+    <img src="images/bg_all.png">
+  </div>
+  <p id="debug">
+    <p>
+</body>
+<script>
+
+</script>
+<script type="text/javascript" src="js/greensock-js/src/minified/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </html>
