@@ -1,0 +1,82 @@
+#btnSlide{
+  position:relative;
+  z-index:10000;
+  width:100%;
+  FLOAT:left;
+  pointer-events:none;
+}
+
+
+#backPlayBtn,#nextPlayBtn,#subBtn{
+  float:right;
+  pointer-events: visible;
+/*margin-top: 200px;*/
+}
+
+.btn-slide{
+  opacity: 0.6;
+  color:white;
+  font-size: 20px;
+  -webkit-animation:fxBtn2 0.5s;
+
+}
+
+
+.btn-slide:hover{
+  opacity: 1;
+  color:white;
+  -webkit-animation:fxBtn 0.5s;
+  transform: perspective(500px) scale3d(0.8, 2, 2) translateZ(100px);
+
+  /*transform: perspective(500px) scale3d(0.8, 2, 0.2) translateZ(100px);*/
+
+}
+
+.TestSlide:hover{
+-webkit-animation:fxBtn 0.5s;
+
+
+}
+
+
+
+.mySlides{
+    position: absolute;
+    display:none;
+    animation: fxHome 1s;
+    -webkit-animation: fxHome 1s;
+
+}
+
+@keyFrames fxBtn{
+  0%{
+    transform: perspective(500px) scale3d(1, 1, 1) translateZ(100px);
+
+  }
+  100%{
+     transform: perspective(500px) scale3d(0.8, 2, 2) translateZ(100px);
+  }
+}
+
+@keyframes fxBtn2 {
+  0%{
+    transform: perspective(500px) scale3d(0.8, 2, 2) translateZ(100px);
+
+  }
+  100%{
+     transform: perspective(500px) scale3d(1, 1, 1) translateZ(100px);
+  }
+}
+
+@keyframes fxHome {
+    0%  {
+      right:1100px;
+      opacity:0;
+    }
+    90% {
+       opacity: 1;
+     }
+    100% {
+       right:0px;
+     }
+}
