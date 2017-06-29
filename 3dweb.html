@@ -4,11 +4,35 @@
 <head>
   <meta charset="utf-8">
   <title>3D WEBSITE 04</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/3dweb.css">
 </head>
 
 <body>
-  <h1>3D WEBSITE 04 </h1>
-  <a class="btn btn-primary" href="index.html">back</a>
+  <div id="btnSlide" class="contrainer">
+      <a id="backPlayBtn" class="btn btn-slide col-xs-2" onclick="backPlay()"><span class="glyphicon glyphicon-chevron-right"></a>
+      <div class="col-xs-8 text text-center" id="subBtn">
+        <a class="btn btn-slide" onclick="playFx(0)"><span class="glyphicon glyphicon-stop"></span></a>
+        <a class="btn btn-slide" onclick="playFx(1)"><span class="glyphicon glyphicon-stop"></span></a>
+        <a class="btn btn-slide" onclick="playFx(2)"><span class="glyphicon glyphicon-stop"></span></a>
+        <a class="btn btn-slide" onclick="playFx(3)"><span class="glyphicon glyphicon-stop"></span></a>
+        <a class="btn btn-slide" onclick="playFx(4)"><span class="glyphicon glyphicon-stop"></span></a>
+        <a class="btn btn-slide" onclick="playFx(5)"><span class="glyphicon glyphicon-stop"></span></a>
+      </div>
+      <a id="nextPlayBtn" class="btn btn-slide col-xs-2" onclick="nextPlay()"><span class="glyphicon glyphicon-chevron-left"></a>
+</div>
+
+
+
+  <div id="slide"></div>
+  <a class="btn btn-primary" href="index.html">BACK</a>
+
+
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/3dWeb.js"></script>
+
 </body>
 
 </html>
